@@ -1,4 +1,6 @@
 # ziko-jsx
+[![ziko-jsx banner](https://raw.githubusercontent.com/zikojs/.github/main/assets/banners/ziko-jsx.svg)](https://github.com/zikojs)
+
 JSX support for ZikoJS, compiling JSX components to ZikoJS at runtime—no VDOM involved.
 
 ## Example
