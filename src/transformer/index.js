@@ -3,7 +3,6 @@ import * as walk from "acorn-walk"
 export function transform(ast) {
   const baseWithJSX = Object.assign({}, walk.base, {
     JSXElement(node, state, visit) {
-      // traverse opening element, children and closing element
       if (node.openingElement) 
         visit(node.openingElement, state, "JSXOpeningElement");
       for (let i = 0; i < (node.children || []).length; i++) 
@@ -99,7 +98,7 @@ export function transform(ast) {
     }
   }
 
-  // If any tags are used, ensure `import { tags } from 'ziko/ui'` exists at the program top
+  // If any tags are used, ensure `import { tags } from 'ziko/dom'` exists at the program top
   if (ast && ast.type === "Program") {
     const usesTags = Array.from(scopeTags.values()).some(set => set.size > 0);
     if (usesTags) {
@@ -128,7 +127,7 @@ export function transform(ast) {
               local: { type: "Identifier", name: "tags" }
             }
           ],
-          source: { type: "Literal", value: "ziko/ui" }
+          source: { type: "Literal", value: "ziko/dom" }
         };
         ast.body.unshift(importDecl);
       }

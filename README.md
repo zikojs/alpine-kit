@@ -22,7 +22,7 @@ export default function Hello({ text, value } = {}) {
 
 ### Output (ZikoJS)
 ```js
-import { tags } from "ziko/ui";
+import { tags } from "ziko/domm";
 import {ExternalComponent} from './ExternalComponent.js'
 
 export default function Hello({ text, value } = {}) {

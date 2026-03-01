@@ -195,7 +195,7 @@ export function transform(ast) {
     }
   }
 
-  // Ensure import { tags } from "ziko/ui"
+  // Ensure import { tags } from "ziko/dom"
   if (ast.type === "Program" && scopeTags.size) {
     const hasImport = ast.body.some(n =>
       n.type === "ImportDeclaration" &&
@@ -210,7 +210,7 @@ export function transform(ast) {
           imported: { type: "Identifier", name: "tags" },
           local: { type: "Identifier", name: "tags" }
         }],
-        source: { type: "Literal", value: "ziko/ui" }
+        source: { type: "Literal", value: "ziko/dom" }
       });
     }
   }
