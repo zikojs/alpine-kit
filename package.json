@@ -2,7 +2,7 @@
   "name": "alpine-kit",
   "version": "1.0.0",
   "description": "",
-  "workspaces":[
+  "workspaces": [
     "packages/*"
   ],
   "scripts": {
@@ -19,5 +19,8 @@
     }
   },
   "packageManager": "pnpm@11.24.0",
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "ziko": "catalog:"
+  }
 }

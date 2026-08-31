@@ -30,7 +30,7 @@
   "license": "MIT",
   "author": "zakaria elalaoui",
   "dependencies": {
-    "ziko": "workspace:*",
+    "ziko": "catalog:",
     "@zikojs/vite-plugin-alpine-html" : "workspace:*",
     "@zikojs/vite-plugin-alpine-jsx" : "workspace:*",
     "@zikojs/vite-plugin-alpine-mdx" : "workspace:*"
