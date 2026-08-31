@@ -1,9 +1,0 @@
-{
-  "compilerOptions": {
-    "jsx": "preserve",  
-    "jsxFactory": "undefined",          
-    "jsxFragmentFactory": "undefined",
-    "target": "ESNext",
-    "module": "ESNext"
-  }
-}

@@ -1,0 +1,38 @@
+{
+  "name": "@zikojs/vite-plugin-alpine-mdx",
+  "version": "0.1.0",
+  "description": "",
+  "type": "module",
+  "keywords": [
+  ],
+  "homepage": "https://github.com/zikojs/alpine-kit#readme",
+  "bugs": {
+    "url": "https://github.com/zikojs/alpine-kit/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zikojs/alpine-kit.git",
+    "directory": "packages/vite-plugin-alpine-mdx"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports":{
+    ".":{
+      "import" : "./src/index.js",
+      "types" : "./src/index.d.ts"
+    },
+    "./*":{
+      "import" : "./src/*/index.js",
+      "types" : "./src/*/index.d.ts"
+    }
+  },
+  "license": "MIT",
+  "author": "zakaria elalaoui",
+  "dependencies": {
+    "ziko": "workspace:*"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
